@@ -1,0 +1,73 @@
+﻿@page
+@model IndexModel
+@{
+
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">ContosoCrafts</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<div class="card-columns">
+    @foreach (var product in Model.Products)
+    {
+        <div class="card">
+            <div class="card-img" style="background: url('@product.Image');"></div>
+            <div class="card-body">
+                <h5 class="card-title">@product.Title</h5>
+            </div>
+        </div>
+    }
+</div>
+
+@using ContosoCrafts.WebSite.Models
+@{
+    try
+    {
+        var p = new Product();
+        p.Title = "Teste asdfads sad fads asdf adsf asdf dsa fasdf adsf asd fasdf ";
+
+        if (!TryValidateModel(p, nameof(p)))
+        {
+            var message = string.Join(" | ", ModelState.Values
+            .SelectMany(v => v.Errors)
+            .Select(e => e.ErrorMessage));
+
+            <i>@message</i><br />
+            <strong>Error</strong>
+        }
+
+        <small>Aqui @p.Title</small>
+    } catch (Exception e)
+    {
+        <strong>@e</strong>
+    }
+
+}
+
+@{
+    /*
+     *
+
+@{
+    <h5>@Model.A</h5>
+}
+
+@using ContosoCrafts.WebSite.Models
+@{
+    var p = new Product();
+    p.Title = "Teste";
+}
+
+@using System.Text.Json;
+@{
+    var a = JsonSerializer.Serialize<Product>(p);
+    var b = JsonSerializer.Deserialize<Product>(a);
+    <h3>@b.Title</h3>
+     *
+}
+     */
+}
