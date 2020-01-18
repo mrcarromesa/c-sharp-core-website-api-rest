@@ -9,3 +9,9 @@ https://www.youtube.com/watch?v=but7jqjopKM
 
 http://www.macoratti.net/15/09/mvc_mdlst1.htm
 http://www.macoratti.net/pageview.aspx?catid=37
+
+
+
+https://stackoverflow.com/questions/9569270/custom-method-names-in-asp-net-web-api
+
+https://stackoverflow.com/questions/5212248/get-error-message-if-modelstate-isvalid-fails
