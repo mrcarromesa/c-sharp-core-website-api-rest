@@ -12,7 +12,7 @@ namespace ContosoCrafts.WebSite.Models
 
         [JsonPropertyName("img")]
         public object Image { get; set; }
-        [Required(ErrorMessage ="Url requerida")]
+        
         public string Url { get; set; }
 
         [Required(ErrorMessage ="Url Obrigatória")]

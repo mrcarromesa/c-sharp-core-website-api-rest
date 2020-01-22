@@ -15,3 +15,84 @@ http://www.macoratti.net/pageview.aspx?catid=37
 https://stackoverflow.com/questions/9569270/custom-method-names-in-asp-net-web-api
 
 https://stackoverflow.com/questions/5212248/get-error-message-if-modelstate-isvalid-fails
+
+
+https://stackoverflow.com/questions/38773590/can-i-build-net-core-applications-on-a-windows-server-without-visual-studio-ins
+
+
+https://dev.mysql.com/doc/connector-net/en/connector-net-tutorials-sql-command.html
+
+
+
+
+//comandos dotnet migration:
+
+//Esse video pode ajudar um pouco:
+https://www.youtube.com/watch?v=Y4eo3uA0Okc
+
+Instalar .net core 3.1:
+https://dotnet.microsoft.com/download?framework=Microsoft.NETCore.App&framework_version=3.1.1&arch=x64&rid=osx.10.15-x64
+
+Instalar o ef para migrations:
+
+dotnet tool install -g dotnet-ef
+https://github.com/dotnet/efcore/issues/15448
+
+https://stackoverflow.com/questions/45382536/how-to-enable-migrations-in-visual-studio-for-mac
+
+dotnet restore
+
+dotnet ef
+
+dotnet ef migrations add initial -v
+
+
+dotnet ef database update
+
+//=========
+Exemplo para Windows:
+https://www.youtube.com/watch?v=ic-j0JMrUdk
+
+
+
+
+
+// foreingkey
+https://www.entityframeworktutorial.net/code-first/foreignkey-dataannotations-attribute-in-code-first.aspx
+
+//Paginaçao com ef:
+https://www.codingame.com/playgrounds/5363/paging-with-entity-framework-core
+
+
+// Conexao direta com o mysql
+https://dev.mysql.com/doc/connector-net/en/connector-net-tutorials-sql-command.html
+
+
+
+ms sql in dokcer:
+https://blog.kontena.io/dot-net-core-and-sql-server-in-docker/
+
+
+
+
+// Entre outros... virtual fields:
+
+https://docs.microsoft.com/pt-br/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
+
+[Display(Name = "Full Name")]
+        public string FullName
+        {
+            get
+            {
+                return LastName + ", " + FirstMidName;
+            }
+        }
+
+
+https://stackoverflow.com/questions/19536064/select-multiple-columns-using-entity-framework
+
+// realizar select com ef
+
+
+Utilizar o DbContext:
+https://docs.microsoft.com/pt-br/ef/core/miscellaneous/configuring-dbcontext#more-reading
